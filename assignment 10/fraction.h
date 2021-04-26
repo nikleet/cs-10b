@@ -6,6 +6,7 @@
 
     The Fraction class can be used to create and manipulate objects that
     represent mathematical fractions, storing a numerator and denominator. 
+    
     The following functions are available:
     Fraction(int n = 0, int d = 1);
         post: The calling object has been created and initialized so that the 
