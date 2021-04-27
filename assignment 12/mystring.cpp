@@ -220,10 +220,10 @@ namespace cs_mystring {
             
         char temp[MyString::MAX_INPUT_SIZE + 1];
         in >> temp;
-        
         delete [] target.str;
         target.str = new char[strlen(temp) + 1];
         strcpy(target.str, temp);
+
         return in;
     }
 }
