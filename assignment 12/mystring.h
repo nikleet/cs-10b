@@ -20,7 +20,7 @@
         has been created.
 
     MyString(const MyString& right);
-        post: A copy of the calling object has been created.
+        post: The right parameter has been deep copied to the calling object.
 
     ~MyString();
         post: The calling object has been deallocated.
