@@ -16,7 +16,7 @@
 
 using namespace std;
 
-int* ascSelectSort(int arr[], int start, int end);
+void ascSelectSort(int arr[], int start, int end);
 int findIofSmallest(const int arr[], int start, int end);
 void testSelectSort(int numItems, int min, int max, int start, int end);
 
@@ -49,10 +49,8 @@ int main() {
 
     post: The elements between start and end have been sorted in ascending order.
 */
-int* ascSelectSort(int arr[], int start, int end) {
-    if(start >= end)
-        return arr;
-    else {
+void ascSelectSort(int arr[], int start, int end) {
+    if(start < end) {
         int minI = findIofSmallest(arr, start, end);
         if(start != minI)
             swap(arr[start], arr[minI]);

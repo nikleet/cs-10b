@@ -16,7 +16,7 @@
 
 using namespace std;
 
-char* reverseWithinBounds(char array[], int first, int last);
+void reverseWithinBounds(char array[], int first, int last);
 void reverseCstring(char* str);
 void testArray(char arr[], int lower, int upper, int size);
 
@@ -63,11 +63,8 @@ int main() {
     
     post: The elements between first and last have been reversed. 
 */
-char* reverseWithinBounds(char arr[], int first, int last) {
-    if(first >= last) {
-        return arr;
-    }
-    else {
+void reverseWithinBounds(char arr[], int first, int last) {
+    if(first <last) {
         swap(arr[first], arr[last]);
         reverseWithinBounds(arr, first + 1, last - 1);
     }
